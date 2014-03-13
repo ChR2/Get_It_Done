@@ -1,0 +1,10 @@
+class CreateLists < ActiveRecord::Migration
+  def change
+    create_table :lists do |t|
+      t.string :list_name
+      t.datetime :deadline_date
+
+      t.timestamps
+    end
+  end
+end
